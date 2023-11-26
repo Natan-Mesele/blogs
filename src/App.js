@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const itemPerPage = 5;
+const itemPerPage = 8;
 const data = [
   {
     'date': 'Natale campell | 28 August 2022',
@@ -113,25 +113,27 @@ function App() {
           </div>
         )
       })}
-      <button 
-      disabled={currentPage < 1 } onclick={() => handlePageChange(currentPage - 1)}>&lt;</button>
-      {
-        pageIndex.slice(
-          Math.max(0, currentPage - 2), 
-          Math.min(numberOfPage, currentPage + 3)
-        )
-      .map((page) => (
+      <div>
         <button 
-        key={page} 
-        onclick={() => handlePageChange(page - 1)}
-        className={page === currentPage + 1 ? "active" : "" }
-        >
-         {page}
-         </button>
-      ))}
-      <button 
-      disabled={currentPage > numberOfPage}
-       onclick={() => handlePageChange(currentPage + 1)}>&gt;</button>
+        disabled={currentPage < 1 } onClick={() => handlePageChange(currentPage - 1)}>&lt;</button>
+        {
+          pageIndex.slice(
+            Math.max(0, currentPage - 2), 
+            Math.min(numberOfPage, currentPage + 3)
+          )
+        .map((page) => (
+          <button 
+          key={page} 
+          onClick={() => handlePageChange(page - 1)}
+          className={page === currentPage + 1 ? "active" : "" }
+          >
+            {page}
+            </button>
+        ))}
+        <button 
+        disabled={currentPage > numberOfPage}
+          onClick={() => handlePageChange(currentPage + 1)}>&gt;</button>
+      </div>
     </div>
   )
 }
