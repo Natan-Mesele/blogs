@@ -6,86 +6,62 @@ const data = [
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
     'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
   },
   {
-     
     'date': 'Mesele Mengistu | 2 may 2022',
     'title': 'War in Gaz',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-     
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-     
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-    
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-     
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-     
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-    
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-     
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-     
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-    
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   },
   {
-     
     'date': 'Natale campell | 28 August 2022',
     'title': 'We help Group the internet',
-    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world",
-    
+    'desc': "an electronic communications network that connects computer networks and organizational computer facilities around the world", 
   }
-
 ];
 
 const numberOfPage = Math.ceil(data.length / itemPerPage);
@@ -95,7 +71,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(0);
   const columns = data.slice(
   currentPage * itemPerPage,
-  currentPage + 1 * itemPerPage
+  (currentPage + 1) * itemPerPage
   );
 
   const handlePageChange = (pageNumber) => {
